@@ -1,14 +1,7 @@
-buildscript {
-    ext{ // ext : 전역 변수 설정
-        springBootVersion = '3.1.2'
-    }
-    repositories {
-        mavenCentral()
-        jcenter()
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-    }
+plugins { // (1)
+    id 'org.springframework.boot' version '3.1.2' // RELEASE 삭제
+    id 'io.spring.dependency-management' version '1.1.2'
+    id 'java'
 }
 
 // 필수 플러그인
@@ -23,12 +16,15 @@ sourceCompatibility = 17
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 dependencies {
-    compileOnly('org.springframework.boot:spring-boot-starter-web')
-    testCompileOnly('org.springframework.boot:spring-boot-starter-test')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // Gradle 5.x 이상
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
 }
 
 test {
