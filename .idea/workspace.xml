@@ -4,24 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de4b0f2e-95e6-4818-82aa-5c4f305809a4" name="Changes" comment="feat: update_gradle">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/domain/BaseTimeEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/domain/posts/Posts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/domain/posts/PostsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/service/posts/PostsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/web/PostsApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/web/dto/PostsResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/web/dto/PostsSaveRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/web/dto/PostsUpdateRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/springboot/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/springboot/domain/posts/PostsRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/springboot/web/PostsApiControllerTest.java" afterDir="false" />
+    <list default="true" id="de4b0f2e-95e6-4818-82aa-5c4f305809a4" name="Changes" comment="feat: connect_jpa">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/web/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Layout/footer.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Layout/header.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-save.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/springboot/web/IndexTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +64,7 @@
         <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -96,12 +91,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="use_jpa" />
-                    <option name="lastUsedInstant" value="1694343282" />
+                    <option name="branchName" value="mustache" />
+                    <option name="lastUsedInstant" value="1694688652" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1694341588" />
+                    <option name="lastUsedInstant" value="1694577275" />
                   </RecentBranch>
                 </list>
               </option>
@@ -128,24 +123,25 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/springboot-webservice/build.gradle&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;22808f305c77dbbcbdc0c9f3f9fc1e90&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/springboot-webservice/build.gradle",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "22808f305c77dbbcbdc0c9f3f9fc1e90",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\springboot-webservice\src\main\java\org\springboot\domain" />
@@ -157,8 +153,8 @@
       <recent name="org.springboot.web" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PostsRepositoryTest.append_BaseTimeEntity">
-    <configuration name="PostsApiControllerTest.append_posts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="HelloControllerTest.hello_return" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -171,7 +167,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.springboot.web.PostsApiControllerTest.append_posts&quot;" />
+            <option value="&quot;org.springboot.web.HelloControllerTest.hello_return&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -181,7 +177,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PostsApiControllerTest.update_posts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HelloControllerTest.hellodto_return" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -194,7 +190,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.springboot.web.PostsApiControllerTest.update_posts&quot;" />
+            <option value="&quot;org.springboot.web.HelloControllerTest.hellodto_return&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -204,7 +200,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PostsRepositoryTest.append_BaseTimeEntity" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HelloResponseDtoTest.lombok_test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -217,7 +213,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.springboot.domain.posts.PostsRepositoryTest.append_BaseTimeEntity&quot;" />
+            <option value="&quot;org.springboot.web.dto.HelloResponseDtoTest.lombok_test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -227,7 +223,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PostsRepositoryTest.save_posts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="IndexTest.main_loading" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -240,7 +236,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.springboot.domain.posts.PostsRepositoryTest.save_posts&quot;" />
+            <option value="&quot;org.springboot.web.IndexTest.main_loading&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -265,11 +261,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PostsRepositoryTest.append_BaseTimeEntity" />
         <item itemvalue="Spring Boot.Application" />
-        <item itemvalue="Gradle.PostsApiControllerTest.update_posts" />
-        <item itemvalue="Gradle.PostsApiControllerTest.append_posts" />
-        <item itemvalue="Gradle.PostsRepositoryTest.save_posts" />
+        <item itemvalue="Gradle.IndexTest.main_loading" />
+        <item itemvalue="Gradle.HelloResponseDtoTest.lombok_test" />
+        <item itemvalue="Gradle.HelloControllerTest.hellodto_return" />
+        <item itemvalue="Gradle.HelloControllerTest.hello_return" />
       </list>
     </recent_temporary>
   </component>
@@ -287,6 +283,8 @@
       <workItem from="1694423530977" duration="208000" />
       <workItem from="1694504287331" duration="7096000" />
       <workItem from="1694517319282" duration="2526000" />
+      <workItem from="1694577176396" duration="151000" />
+      <workItem from="1694687490912" duration="5688000" />
     </task>
     <task id="LOCAL-00001" summary="feat: update_gradle">
       <created>1694341050009</created>
@@ -295,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694341050009</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: connect_jpa">
+      <created>1694577228227</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694577228227</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +317,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="use_jpa" />
+                        <option value="mustache" />
                       </list>
                     </value>
                   </entry>
@@ -326,6 +331,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: update_gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update_gradle" />
+    <MESSAGE value="feat: connect_jpa" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: connect_jpa" />
   </component>
 </project>
