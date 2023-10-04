@@ -5,11 +5,15 @@ import org.springboot.service.posts.PostsService;
 import org.springboot.web.dto.PostsResponseDto;
 import org.springboot.web.dto.PostsSaveRequestDto;
 import org.springboot.web.dto.PostsUpdateRequestDto;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RequiredArgsConstructor
 @RestController
+@RequestMapping("/")
 public class PostsApiController {
+
+    @Autowired
     private final PostsService postsService;
 
     @PostMapping("/api/v1/posts")
