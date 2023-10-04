@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de4b0f2e-95e6-4818-82aa-5c4f305809a4" name="Changes" comment="feat: add_mustache">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/web/dto/PostsListResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-update.mustache" afterDir="false" />
+    <list default="true" id="de4b0f2e-95e6-4818-82aa-5c4f305809a4" name="Changes" comment="feat: add_update/delete/list">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/config/auth/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/domain/user/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/domain/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/domain/user/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-oauth.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/domain/posts/PostsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/domain/posts/PostsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/service/posts/PostsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/service/posts/PostsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/web/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/web/PostsApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/web/PostsApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +57,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -89,12 +87,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="mustache2" />
-                    <option name="lastUsedInstant" value="1694777186" />
+                    <option name="branchName" value="conn_security" />
+                    <option name="lastUsedInstant" value="1695712620" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1694701065" />
+                    <option name="lastUsedInstant" value="1694780305" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="mustache2" />
+                    <option name="lastUsedInstant" value="1694777186" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="mustache" />
@@ -139,7 +141,7 @@
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.rainbow.brackets&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;22808f305c77dbbcbdc0c9f3f9fc1e90&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -249,6 +251,10 @@
       <method v="2" />
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="id" value="978398866570-g6m4dhfh9r489f1gi0tsuphf122mnfuq.apps.googleusercontent.com" />
+        <env name="password" value="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" />
+      </envs>
       <module name="springboot_webservice.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.springboot.Application" />
       <extension name="coverage">
@@ -261,6 +267,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.HelloControllerTest" />
+      <item itemvalue="Gradle.HelloControllerTest.hello_return" />
+      <item itemvalue="Gradle.HelloControllerTest.hellodto_return" />
+      <item itemvalue="Gradle.HelloResponseDtoTest.lombok_test" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Application" />
@@ -287,7 +300,11 @@
       <workItem from="1694517319282" duration="2526000" />
       <workItem from="1694577176396" duration="151000" />
       <workItem from="1694687490912" duration="6011000" />
-      <workItem from="1694777146754" duration="3063000" />
+      <workItem from="1694777146754" duration="3159000" />
+      <workItem from="1695607330005" duration="240000" />
+      <workItem from="1695712478956" duration="5147000" />
+      <workItem from="1695805322606" duration="512000" />
+      <workItem from="1696416772378" duration="43000" />
     </task>
     <task id="LOCAL-00001" summary="feat: update_gradle">
       <created>1694341050009</created>
@@ -310,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694700791734</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: add_update/delete/list">
+      <created>1694780247229</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694780247229</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +351,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="mustache2" />
+                        <option value="conn_security" />
                       </list>
                     </value>
                   </entry>
@@ -343,6 +367,7 @@
     <MESSAGE value="feat: update_gradle" />
     <MESSAGE value="feat: connect_jpa" />
     <MESSAGE value="feat: add_mustache" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add_mustache" />
+    <MESSAGE value="feat: add_update/delete/list" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add_update/delete/list" />
   </component>
 </project>
