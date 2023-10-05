@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de4b0f2e-95e6-4818-82aa-5c4f305809a4" name="Changes" comment="docs: 환경 변수 설정">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/config/auth/CustomOAuth2UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/config/auth/dto/OAuthAttributes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/config/auth/dto/SessionUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/config/auth/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/config/auth/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/web/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +68,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="add_swagger" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,6 +88,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="con_security" />
+                    <option name="lastUsedInstant" value="1696504881" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="master" />
                     <option name="lastUsedInstant" value="1696422899" />
                   </RecentBranch>
@@ -96,10 +106,6 @@
                   <RecentBranch>
                     <option name="branchName" value="mustache2" />
                     <option name="lastUsedInstant" value="1694777186" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="mustache" />
-                    <option name="lastUsedInstant" value="1694688652" />
                   </RecentBranch>
                 </list>
               </option>
@@ -304,6 +310,7 @@
       <workItem from="1695712478956" duration="5147000" />
       <workItem from="1695805322606" duration="512000" />
       <workItem from="1696416772378" duration="4127000" />
+      <workItem from="1696504867746" duration="4641000" />
     </task>
     <task id="LOCAL-00001" summary="feat: update_gradle">
       <created>1694341050009</created>
@@ -340,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696416845700</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="docs: 환경 변수 설정">
+      <created>1696422971116</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696422971116</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +371,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="add_swagger" />
+                        <option value="con_security" />
                       </list>
                     </value>
                   </entry>
@@ -374,6 +388,7 @@
     <MESSAGE value="feat: connect_jpa" />
     <MESSAGE value="feat: add_mustache" />
     <MESSAGE value="feat: add_update/delete/list" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add_update/delete/list" />
+    <MESSAGE value="docs: 환경 변수 설정" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: 환경 변수 설정" />
   </component>
 </project>

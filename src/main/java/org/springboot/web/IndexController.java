@@ -1,6 +1,8 @@
 package org.springboot.web;
 
+import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
+import org.springboot.config.auth.dto.SessionUser;
 import org.springboot.service.posts.PostsService;
 import org.springboot.web.dto.PostsResponseDto;
 import org.springframework.stereotype.Controller;
@@ -17,10 +19,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class IndexController {
 
     private final PostsService postsService;
+    private final HttpSession httpSession;
 
     @GetMapping("/")
     public String index(Model model) {
         model.addAttribute("posts", postsService.findAllDesc());
+        SessionUser user = (SessionUser) httpSession.getAttribute("user");
+
+        if(user != null){
+            model.addAttribute("userName", user.getName());
+        }
         return "index";
     }
     @GetMapping("/posts/save")
