@@ -34,10 +34,14 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
 
     // h2
-    //implementation 'com.h2database:h2:2.2.224'
+    implementation 'com.h2database:h2:2.2.224'
 
     // mysql 연결
     implementation 'com.mysql:mysql-connector-j'
+
+
+    //mariaDB 연결
+    implementation 'org.mariadb.jdbc:mariadb-java-client:3.2.0'
 
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     annotationProcessor 'org.projectlombok:lombok'
@@ -53,7 +57,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-security:3.1.4'
     implementation 'org.springframework.security:spring-security-oauth2-jose:6.1.4'
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
-    // implementation 'org.springframework.session:spring-session-jdbc:3.1.2'
+    implementation 'org.springframework.session:spring-session-jdbc:3.1.2'
 
     // swagger spring-boot 3.x.x 이상인 경우 openapi-ui 대신 openapi-starter-webmvc-ui 사용
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
