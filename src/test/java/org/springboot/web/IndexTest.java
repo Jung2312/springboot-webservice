@@ -19,11 +19,15 @@ public class IndexTest {
     private TestRestTemplate restTemplate;
 
     @Test
-    public void main_loading(){
+    public void main_loading() {
         //when
         String body = this.restTemplate.getForObject("/", String.class);
+
+        // Log the response body
+        System.out.println("Response body: " + body);
 
         //then
         assertThat(body).contains("스프링 부트로 시작하는 웹 서비스");
     }
+
 }
